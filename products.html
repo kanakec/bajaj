@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ShopPro | Products</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">ShopPro</div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="deals.html">Deals</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="search-cart-user">
+      <input type="text" id="productSearchInput" placeholder="Search products..." onkeyup="filterProducts()" />
+      <a href="cart.html" class="icon">🛒</a>
+      <a href="login.html" class="icon">👤</a>
+    </div>
+  </header>
+
+  <!-- Category Filter -->
+  <section class="categories" style="text-align: center;">
+    <h2>Browse All Products</h2>
+    <div class="category-grid" style="margin-top: 1rem;">
+      <button class="category" onclick="filterByCategory('All')">All</button>
+      <button class="category" onclick="filterByCategory('Electronics')">Electronics</button>
+      <button class="category" onclick="filterByCategory('Fashion')">Fashion</button>
+      <button class="category" onclick="filterByCategory('Toys')">Toys</button>
+      <button class="category" onclick="filterByCategory('Home')">Home</button>
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="featured-products">
+    <div class="product-grid" id="productContainer">
+      <!-- Product Card -->
+      <div class="product-card" data-category="Electronics" data-name="Smartphone">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf6-8kvnjojsEOOzPEDjleXswXZjql-riPLQ&s" alt="Smartphone" />
+        <h3>Smartphone</h3>
+        <p>₹15,999</p>
+        <a href="product-detail.html" class="btn">View</a>
+      </div>
+      <div class="product-card" data-category="Electronics" data-name="Laptop">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR_PjR7mAKttaP94i5D9DHM5ONOYCONy_WLA&s" alt="Laptop" />
+        <h3>Laptop</h3>
+        <p>₹55,000</p>
+        <a href="product-detail.html" class="btn">View</a>
+      </div>
+      <div class="product-card" data-category="Fashion" data-name="Leather Jacket">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS17Su--zXx874naj3WRViEW3Ko2z16ziwSw&s" alt="Jacket" />
+        <h3>Leather Jacket</h3>
+        <p>₹3,499</p>
+        <a href="product-detail.html" class="btn">View</a>
+      </div>
+      <div class="product-card" data-category="Toys" data-name="Teddy Bear">
+        <img src="https://cpimg.tistatic.com/09296742/b/4/TEDDY-BEAR-STUFFED-TOYS.jpg" alt="Teddy Bear" />
+        <h3>Teddy Bear</h3>
+        <p>₹499</p>
+        <a href="product-detail.html" class="btn">View</a>
+      </div>
+      <div class="product-card" data-category="Home" data-name="Robot Vacuum">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwbNwaAgRss-UHoRXe4CSq8Liouh5Xl8mLZA&s" alt="Vacuum" />
+        <h3>Robot Vacuum</h3>
+        <p>₹8,999</p>
+        <a href="product-detail.html" class="btn">View</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h4>ShopPro</h4>
+        <p>Trusted by thousands of customers nationwide.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a><br />
+        <a href="products.html">Products</a><br />
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <p>📘 Facebook<br />🐦 Twitter<br />📸 Instagram</p>
+      </div>
+    </div>
+    <p class="copyright">© 2025 ShopPro. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

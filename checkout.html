@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ShopPro | Checkout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">ShopPro</div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="search-cart-user">
+      <input type="text" placeholder="Search products..." />
+      <a href="cart.html" class="icon">🛒</a>
+      <a href="login.html" class="icon">👤</a>
+    </div>
+  </header>
+
+  <!-- Checkout Section -->
+  <section class="checkout-section">
+    <h2>Checkout</h2>
+    <div class="checkout-container">
+      
+      <!-- Billing & Shipping -->
+      <div class="checkout-form">
+        <h3>Billing Details</h3>
+        <form action="#" method="post">
+          <input type="text" name="fullname" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+          <input type="text" name="address" placeholder="Address" required />
+          <input type="text" name="city" placeholder="City" required />
+          <input type="text" name="pincode" placeholder="Pincode" required />
+
+          <h3>Shipping Method</h3>
+          <label><input type="radio" name="shipping" checked /> Standard (Free)</label><br>
+          <label><input type="radio" name="shipping" /> Express (₹99)</label>
+
+          <h3>Payment Method</h3>
+          <label><input type="radio" name="payment" checked /> Credit/Debit Card</label><br>
+          <label><input type="radio" name="payment" /> UPI</label><br>
+          <label><input type="radio" name="payment" /> Cash on Delivery</label>
+
+          <button type="submit" class="btn place-order">Place Order</button>
+        </form>
+      </div>
+
+      <!-- Order Summary -->
+      <div class="order-summary">
+        <h3>Order Summary</h3>
+        <div class="summary-item">
+          <p>Blue Denim Jacket x1</p>
+          <p>₹1,499</p>
+        </div>
+        <div class="summary-item">
+          <p>Shipping</p>
+          <p>Free</p>
+        </div>
+        <hr>
+        <div class="summary-total">
+          <p>Total</p>
+          <p><strong>₹1,499</strong></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h4>ShopPro</h4>
+        <p>Safe and secure checkout guaranteed.</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <a href="products.html">Continue Shopping</a><br />
+        <a href="contact.html">Support</a>
+      </div>
+      <div>
+        <h4>Stay Updated</h4>
+        <input type="email" placeholder="Your email" />
+      </div>
+    </div>
+    <p class="copyright">© 2025 ShopPro. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
